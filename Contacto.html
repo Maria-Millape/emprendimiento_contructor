@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página Aislación térmica </title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
+            <a href="index.html">Inicio</a>
+            <a href="Sobre_nosotros.html">Sobre Nosotros</a>
+            <a href="Productos_servicio.html">Productos y Servicios</a>
+            <a href="Proyectos.html">Proyectos</a>
+            <a href="Contacto.html">Contactanos</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Únete a la Revolución Térmica</h1>
+            <h2>Estamos aquí para responder a tus preguntas y ayudarte a mejorar la aislación térmica de tu hogar o lugar de trabajo.</h2>
+            
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Contáctanos</h2>
+            <div class="contenedor-sobre-nosotros">
+                <form method="post">
+                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    <input type="email" name="correo" placeholder="Correo electrónico" required>
+                    <input type="tel" name="numero" placeholder="Número de teléfono">
+                    <textarea name="mensaje" placeholder="Escribe aquí tu mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="info-contacto">
+                <h3>Encargadas: Maria Jesus Millape y Belén Sepúlveda</h3>
+                <p>Celular: +56912345678</p>
+                <p>Correo: ECO-BIO2023@gmail.com</p>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/celulosa.jpg" alt="">
+                        <h3>Fibra de celulosa</h3>
+                        <p>Material orgánico y natural, obtenido de la trituración de papel de periódicos. Ofrece protección contra incendios y una excelente aislación. ademas es material biodegradable con un coeficiente de conductividad termica de 0,042w/m*k por lo tanto es un aislamiento sostenible</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/corchoexpandido.jpg" alt="">
+                        <h3>Corcho expandido</h3>
+                        <p>Material aislante e impermeable, resistente a la humedad. Material 100% natural comercializamos en planchas aglomeradas realizadas a presión y calor sin usar ningún tipo de cola, es un material biodegradable con un coeficiente de conductividad termica de 0,041w/m*k, tiene un consumo minimo d energia.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/lanadeoveja.jpg" alt="">
+                        <h3>Lana de oveja </h3>
+                        <p>Material resistente al vapor, capaz de absorber y liberar humedad, manteniendo sus cualidades intactas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Celular</h4>
+                <p>+56912345678</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>ECO-BIO2023@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicacion</h4>
+                <p>Temuco</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Maria Jesus Millape | Belén Sepúlveda</h2>
+    </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera predeterminada
+            var nombre = document.querySelector('input[name="nombre"]').value; // Obtiene el valor del campo de nombre
+            alert('Gracias por contactarnos, ' + nombre + '. Nuestras encargadas te contactarán a la brevedad');
+            location.reload(); // Recarga la página
+        });
+        
+    </script>
+</body>
+
+</html>
